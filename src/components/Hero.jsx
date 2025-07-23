@@ -59,10 +59,15 @@ const Hero = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <a href="/Portfolio/VIJAY_LAXMI_RESUME.pdf" download className="shine-button px-8 py-3 bg-gradient-to-r from-green-600 to-green-500 text-white rounded-lg font-semibold shadow-lg hover:shadow-green-500/25 transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group">
-                  <Download className="w-5 h-5 group-hover:animate-bounce" />
-                  Download Resume
+               <a
+                href="/Portfolio/VIJAY_LAXMI_RESUME.pdf"
+                download
+                className="shine-button px-8 py-3 bg-gradient-to-r from-green-600 to-green-500 text-white rounded-lg font-semibold shadow-lg hover:shadow-green-500/25 transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group"
+                >
+                <Download className="w-5 h-5 group-hover:animate-bounce" />
+                Download Resume
                 </a>
+
                 <a href="mailto:vijaylaxmi.codes@gmail.com" className="glow-button px-8 py-3 border-2 border-green-500 text-green-400 rounded-lg font-semibold hover:bg-green-500 hover:text-white transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group">
                   <Send className="w-5 h-5 group-hover:animate-pulse" />
                   Contact Me
