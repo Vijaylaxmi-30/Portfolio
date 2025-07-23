@@ -59,7 +59,7 @@ const Hero = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <a href="/VIJAY_LAXMI_RESUME.pdf" download className="shine-button px-8 py-3 bg-gradient-to-r from-green-600 to-green-500 text-white rounded-lg font-semibold shadow-lg hover:shadow-green-500/25 transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group">
+                <a href="/Portfolio/VIJAY_LAXMI_RESUME.pdf" download className="shine-button px-8 py-3 bg-gradient-to-r from-green-600 to-green-500 text-white rounded-lg font-semibold shadow-lg hover:shadow-green-500/25 transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group">
                   <Download className="w-5 h-5 group-hover:animate-bounce" />
                   Download Resume
                 </a>
