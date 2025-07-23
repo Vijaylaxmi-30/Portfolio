@@ -1,6 +1,7 @@
 import React from 'react';
 import { Download, Send, Linkedin, Github, Mail } from 'lucide-react';
 
+
 const Hero = () => {
   const badges = [
     { text: 'Problem Solver', color: 'from-green-800 to-green-600' },
@@ -86,7 +87,7 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-green-600 via-green-400 to-green-300 rounded-full animate-spin-slow"></div>
                 <div className="absolute inset-2 bg-gray-900 rounded-full flex items-center justify-center">
                   <img
-                    src="/vijaylaxmi.jpg"
+                    src="/Portfolio/vijaylaxmi.jpg"
                     alt="Vijay Laxmi"
                     className="w-[calc(100%-1rem)] h-[calc(100%-1rem)] object-cover rounded-full filter grayscale hover:grayscale-0 transition-all duration-500 cursor-pointer"
                   />
