@@ -1,12 +1,45 @@
-# React + Vite
+# 🌐 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my **personal portfolio website** built with **React + Vite**.  
+It showcases my skills, projects, and provides access to my latest resume.  
 
-Currently, two official plugins are available:
+🔗 **Live Website**: [https://vijaylaxmi-30.github.io/Portfolio](https://vijaylaxmi-30.github.io/Portfolio)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
+- ⚡ Built with **React + Vite** for fast performance
+- 📄 Resume available at [`/public/resume.pdf`](./public/resume.pdf)
+- 📱 Fully responsive design
+- 🎨 Clean and modern UI
+- 🚀 Deployed with **GitHub Pages**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Project Structure
+my_portfolio/
+├── public/
+│ ├── resume.pdf
+│ └── index.html
+├── src/
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Different sections (Home, Projects, Contact, etc.)
+│ ├── App.jsx
+│ └── main.jsx
+├── package.json
+├── vite.config.js
+└── README.md
+
+---
+🌐 Deployment
+This site is deployed using GitHub Pages.
+Every push to the main branch triggers an automatic deployment.
+
+🧑‍💻 Author
+Vijay Laxmi Rajput
+
+GitHub: @Vijaylaxmi-30
+
+LinkedIn: [https://www.linkedin.com/in/vijaylaxmi300704/]
+
+Portfolio: https://vijaylaxmi-30.github.io/Portfolio
