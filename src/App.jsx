@@ -7,9 +7,9 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <div className="App bg-gray-900 text-gray-300 font-sans">
+    <div className="App bg-slate-50 text-slate-800 font-sans antialiased">
       <Header />
-      <main>
+      <main className="pt-16">
         {/* Each section is wrapped in a div with an ID for navigation */}
         <div id="home">
           <Hero />
