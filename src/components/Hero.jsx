@@ -40,7 +40,7 @@ const Hero = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                <a
-                href="VIJAY_LAXMI_RESUME.pdf"
+                href="/VIJAY_LAXMI_RESUME.pdf"
                 download
                 className="px-8 py-3 bg-teal-600 text-white rounded-md font-semibold shadow-sm hover:bg-teal-700 transition-colors duration-300 flex items-center justify-center gap-2"
                 >
