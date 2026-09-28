@@ -12,8 +12,8 @@ const Footer = () => {
           
           {/* Brand & Rights */}
           <div className="text-center sm:text-left">
-            <a href="#home" className="text-xl font-bold tracking-tight text-zinc-100 hover:text-indigo-400 transition-colors">
-              Vijay Laxmi<span className="text-indigo-400">.</span>
+            <a href="#home" className="text-xl font-bold tracking-tight text-zinc-100 hover:text-emerald-500 transition-colors">
+              Vijay Laxmi<span className="text-emerald-500">.</span>
             </a>
             <p className="text-xs text-zinc-500 mt-1">
               Final-Year Computer Engineering • Pune Institute of Computer Technology (PICT)
@@ -29,7 +29,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/vijaylaxmi300704"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-lg bg-zinc-900/40 backdrop-blur-md border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center text-zinc-500 hover:text-indigo-400 hover:border-indigo-400 transition-colors"
+              className="w-9 h-9 rounded-lg bg-zinc-900/40 backdrop-blur-md border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center text-zinc-500 hover:text-emerald-500 hover:border-emerald-500 transition-colors"
               aria-label="LinkedIn Profile"
             >
               <FiLinkedin size={18} />
@@ -45,14 +45,14 @@ const Footer = () => {
             </a>
             <a
               href="mailto:vijaylaxmi.codes@gmail.com"
-              className="w-9 h-9 rounded-lg bg-zinc-900/40 backdrop-blur-md border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center text-zinc-500 hover:text-indigo-400 hover:border-indigo-400 transition-colors"
+              className="w-9 h-9 rounded-lg bg-zinc-900/40 backdrop-blur-md border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center text-zinc-500 hover:text-emerald-500 hover:border-emerald-500 transition-colors"
               aria-label="Email"
             >
               <FiMail size={18} />
             </a>
             <button
               onClick={scrollToTop}
-              className="w-9 h-9 rounded-lg bg-indigo-950 border border-indigo-800/80 flex items-center justify-center text-indigo-400 hover:bg-indigo-400 hover:text-zinc-100 transition-colors"
+              className="w-9 h-9 rounded-lg bg-emerald-950 border border-emerald-800/80 flex items-center justify-center text-emerald-500 hover:bg-emerald-500 hover:text-zinc-100 transition-colors"
               title="Scroll to top"
               aria-label="Scroll to top"
             >
@@ -67,6 +67,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
 
 

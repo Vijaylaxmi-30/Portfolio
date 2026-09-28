@@ -21,13 +21,13 @@ const Contact = () => {
         
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="text-xs font-bold uppercase tracking-wider text-indigo-400 bg-indigo-950 px-3 py-1 rounded-full border border-indigo-800/60">
+          <span className="text-xs font-bold uppercase tracking-wider text-emerald-500 bg-emerald-950 px-3 py-1 rounded-full border border-emerald-800/60">
             Recruiter & Engineering Inquiries
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-zinc-100 mt-4 mb-4 tracking-tight">
-            Get in <span className="text-indigo-400">Touch</span>
+            Get in <span className="text-emerald-500">Touch</span>
           </h2>
-          <div className="w-20 h-1 bg-indigo-400 mx-auto rounded-full mb-6"></div>
+          <div className="w-20 h-1 bg-emerald-500 mx-auto rounded-full mb-6"></div>
           <p className="text-zinc-500 text-base sm:text-lg max-w-2xl mx-auto">
             Actively interviewing for full-time Software Engineer / SDE roles. Feel free to reach out directly via email or LinkedIn.
           </p>
@@ -37,7 +37,7 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           
           {/* Direct Communication Card */}
-          <div className="bg-zinc-900/40 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 flex flex-col justify-between">
+          <div className="bg-zinc-900/40 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-emerald-500/10 hover:-translate-y-1 transition-all duration-500 flex flex-col justify-between">
             <div>
               <h3 className="text-xl font-bold text-zinc-100 mb-2">
                 Direct Communication
@@ -50,19 +50,19 @@ const Contact = () => {
                 {/* Email with 1-click copy */}
                 <div className="p-3.5 bg-[#0a0a0a] rounded-xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/80 flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-lg bg-indigo-950 border border-indigo-900 flex items-center justify-center text-indigo-400">
+                    <div className="w-9 h-9 rounded-lg bg-emerald-950 border border-emerald-900 flex items-center justify-center text-emerald-500">
                       <FiMail size={18} />
                     </div>
                     <div>
                       <span className="block text-[11px] font-semibold text-zinc-500 uppercase tracking-wider">Email Address</span>
-                      <a href={`mailto:${email}`} className="text-sm font-semibold text-zinc-100 hover:text-indigo-400 transition-colors">
+                      <a href={`mailto:${email}`} className="text-sm font-semibold text-zinc-100 hover:text-emerald-500 transition-colors">
                         {email}
                       </a>
                     </div>
                   </div>
                   <button
                     onClick={handleCopyEmail}
-                    className="p-2 rounded-lg text-zinc-500 hover:text-indigo-400 hover:bg-indigo-950 transition-colors"
+                    className="p-2 rounded-lg text-zinc-500 hover:text-emerald-500 hover:bg-emerald-950 transition-colors"
                     title="Copy Email"
                     aria-label="Copy email address"
                   >
@@ -72,12 +72,12 @@ const Contact = () => {
 
                 {/* Phone */}
                 <div className="p-3.5 bg-[#0a0a0a] rounded-xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/80 flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-lg bg-indigo-950 border border-indigo-900 flex items-center justify-center text-indigo-400">
+                  <div className="w-9 h-9 rounded-lg bg-emerald-950 border border-emerald-900 flex items-center justify-center text-emerald-500">
                     <FiPhone size={18} />
                   </div>
                   <div>
                     <span className="block text-[11px] font-semibold text-zinc-500 uppercase tracking-wider">Phone</span>
-                    <a href={`tel:${phone}`} className="text-sm font-semibold text-zinc-100 hover:text-indigo-400 transition-colors">
+                    <a href={`tel:${phone}`} className="text-sm font-semibold text-zinc-100 hover:text-emerald-500 transition-colors">
                       {phone}
                     </a>
                   </div>
@@ -85,7 +85,7 @@ const Contact = () => {
 
                 {/* Location */}
                 <div className="p-3.5 bg-[#0a0a0a] rounded-xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/80 flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-lg bg-indigo-950 border border-indigo-900 flex items-center justify-center text-indigo-400">
+                  <div className="w-9 h-9 rounded-lg bg-emerald-950 border border-emerald-900 flex items-center justify-center text-emerald-500">
                     <FiMapPin size={18} />
                   </div>
                   <div>
@@ -103,7 +103,7 @@ const Contact = () => {
                 href="./VIJAY_LAXMI_RESUME.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-2.5 px-4 rounded-xl bg-indigo-400 text-zinc-100 font-semibold text-sm hover:bg-indigo-400 flex items-center justify-center gap-2 hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 transition-colors"
+                className="w-full py-2.5 px-4 rounded-xl bg-emerald-500 text-zinc-100 font-semibold text-sm hover:bg-emerald-500 flex items-center justify-center gap-2 hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-emerald-500/10 hover:-translate-y-1 transition-all duration-500 transition-colors"
               >
                 <FiFileText className="w-4 h-4" />
                 <span>Open Resume (PDF)</span>
@@ -112,7 +112,7 @@ const Contact = () => {
           </div>
 
           {/* Social Profiles & Profiles Card */}
-          <div className="bg-zinc-900/40 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 flex flex-col justify-between">
+          <div className="bg-zinc-900/40 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-emerald-500/10 hover:-translate-y-1 transition-all duration-500 flex flex-col justify-between">
             <div>
               <h3 className="text-xl font-bold text-zinc-100 mb-2">
                 Profiles & Repositories
@@ -127,10 +127,10 @@ const Contact = () => {
                   href={linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 bg-[#0a0a0a] rounded-xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/80 flex items-center justify-between hover:border-indigo-400 hover:hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 transition-all group"
+                  className="p-4 bg-[#0a0a0a] rounded-xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/80 flex items-center justify-between hover:border-emerald-500 hover:hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-emerald-500/10 hover:-translate-y-1 transition-all duration-500 transition-all group"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-indigo-950 border border-indigo-900 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-400 group-hover:text-zinc-100 transition-colors">
+                    <div className="w-10 h-10 rounded-lg bg-emerald-950 border border-emerald-900 flex items-center justify-center text-emerald-500 group-hover:bg-emerald-500 group-hover:text-zinc-100 transition-colors">
                       <FiLinkedin size={20} />
                     </div>
                     <div>
@@ -138,7 +138,7 @@ const Contact = () => {
                       <span className="text-xs text-zinc-500 font-mono">linkedin.com/in/vijaylaxmi300704</span>
                     </div>
                   </div>
-                  <span className="text-xs font-semibold text-indigo-400 group-hover:underline">View ↗</span>
+                  <span className="text-xs font-semibold text-emerald-500 group-hover:underline">View ↗</span>
                 </a>
 
                 {/* GitHub */}
@@ -146,7 +146,7 @@ const Contact = () => {
                   href={github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 bg-[#0a0a0a] rounded-xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/80 flex items-center justify-between hover:border-slate-400 hover:hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 transition-all group"
+                  className="p-4 bg-[#0a0a0a] rounded-xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/80 flex items-center justify-between hover:border-slate-400 hover:hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-emerald-500/10 hover:-translate-y-1 transition-all duration-500 transition-all group"
                 >
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-lg bg-zinc-900/40 backdrop-blur-md border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center text-zinc-200 group-hover:bg-zinc-900 group-hover:text-zinc-100 transition-colors">
@@ -175,6 +175,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
 
 

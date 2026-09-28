@@ -57,13 +57,13 @@ const Experience = () => {
         
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="text-xs font-bold uppercase tracking-wider text-indigo-400 bg-indigo-950 px-3 py-1 rounded-full border border-indigo-800/60">
+          <span className="text-xs font-bold uppercase tracking-wider text-emerald-500 bg-emerald-950 px-3 py-1 rounded-full border border-emerald-800/60">
             Work History
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-zinc-100 mt-4 mb-4 tracking-tight">
-            Work & <span className="text-indigo-400">Experience</span>
+            Work & <span className="text-emerald-500">Experience</span>
           </h2>
-          <div className="w-20 h-1 bg-indigo-400 mx-auto rounded-full mb-6"></div>
+          <div className="w-20 h-1 bg-emerald-500 mx-auto rounded-full mb-6"></div>
           <p className="text-zinc-500 text-base sm:text-lg max-w-2xl mx-auto">
             Practical engineering experience across enterprise security API testing and machine learning pipelines.
           </p>
@@ -74,18 +74,18 @@ const Experience = () => {
           {experiences.map((exp) => (
             <div
               key={exp.title + exp.company}
-              className="bg-[#0a0a0a] p-7 sm:p-8 rounded-xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 hover:border-indigo-400 hover:hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 transition-all duration-200"
+              className="bg-[#0a0a0a] p-7 sm:p-8 rounded-xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 hover:border-emerald-500 hover:hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-emerald-500/10 hover:-translate-y-1 transition-all duration-500 transition-all duration-200"
             >
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-5 pb-4 border-b border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                 <div>
-                  <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider bg-indigo-950 text-indigo-400 border border-indigo-800/60 mb-2">
-                    <FiBriefcase className="w-3 h-3 text-indigo-400" />
+                  <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider bg-emerald-950 text-emerald-500 border border-emerald-800/60 mb-2">
+                    <FiBriefcase className="w-3 h-3 text-emerald-500" />
                     {exp.type}
                   </div>
                   <h3 className="text-xl sm:text-2xl font-bold text-zinc-100">
                     {exp.title}
                   </h3>
-                  <p className="text-indigo-400 font-semibold text-base">
+                  <p className="text-emerald-500 font-semibold text-base">
                     {exp.company}
                   </p>
                 </div>
@@ -103,7 +103,7 @@ const Experience = () => {
               <ul className="space-y-2.5 mb-6 text-zinc-500 text-sm leading-relaxed">
                 {exp.bullets.map((bullet, idx) => (
                   <li key={idx} className="flex items-start gap-2.5">
-                    <FiCheckCircle className="w-4 h-4 text-indigo-400 flex-shrink-0 mt-1" />
+                    <FiCheckCircle className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-1" />
                     <span>{bullet}</span>
                   </li>
                 ))}
@@ -128,7 +128,7 @@ const Experience = () => {
         <div>
           <div className="text-center mb-10">
             <h3 className="text-2xl font-bold text-zinc-100 tracking-tight">
-              Technical & Campus <span className="text-indigo-400">Leadership</span>
+              Technical & Campus <span className="text-emerald-500">Leadership</span>
             </h3>
             <p className="text-zinc-500 text-sm mt-1">
               Active involvement in departmental societies, annual techfests, and student communities.
@@ -139,16 +139,16 @@ const Experience = () => {
             {leadershipRoles.map((role) => (
               <div
                 key={role.role}
-                className="bg-[#0a0a0a] p-6 rounded-xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 hover:border-indigo-400 transition-all duration-200 flex flex-col justify-between"
+                className="bg-[#0a0a0a] p-6 rounded-xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 hover:border-emerald-500 transition-all duration-200 flex flex-col justify-between"
               >
                 <div>
-                  <div className="w-10 h-10 rounded-lg bg-indigo-950 border border-indigo-900 flex items-center justify-center mb-4">
-                    <FiAward className="w-5 h-5 text-indigo-400" />
+                  <div className="w-10 h-10 rounded-lg bg-emerald-950 border border-emerald-900 flex items-center justify-center mb-4">
+                    <FiAward className="w-5 h-5 text-emerald-500" />
                   </div>
                   <h4 className="font-bold text-zinc-100 text-base mb-1">
                     {role.role}
                   </h4>
-                  <p className="text-indigo-400 text-xs font-semibold mb-3">
+                  <p className="text-emerald-500 text-xs font-semibold mb-3">
                     {role.organization}
                   </p>
                   <p className="text-zinc-500 text-xs leading-relaxed mb-4">
@@ -171,6 +171,7 @@ const Experience = () => {
 };
 
 export default Experience;
+
 
 
 
