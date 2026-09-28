@@ -16,19 +16,19 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-[#faf6f0] relative overflow-hidden border-t border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/60">
+    <section id="contact" className="py-20 bg-[#0a0a0a] relative overflow-hidden border-t border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/60">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200/60">
+          <span className="text-xs font-bold uppercase tracking-wider text-indigo-400 bg-indigo-950 px-3 py-1 rounded-full border border-indigo-800/60">
             Recruiter & Engineering Inquiries
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-800 mt-4 mb-4 tracking-tight">
-            Get in <span className="text-blue-600">Touch</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-zinc-100 mt-4 mb-4 tracking-tight">
+            Get in <span className="text-indigo-400">Touch</span>
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
-          <p className="text-stone-500 text-base sm:text-lg max-w-2xl mx-auto">
+          <div className="w-20 h-1 bg-indigo-400 mx-auto rounded-full mb-6"></div>
+          <p className="text-zinc-500 text-base sm:text-lg max-w-2xl mx-auto">
             Actively interviewing for full-time Software Engineer / SDE roles. Feel free to reach out directly via email or LinkedIn.
           </p>
         </div>
@@ -37,32 +37,32 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           
           {/* Direct Communication Card */}
-          <div className="bg-white/70 backdrop-blur-md p-8 rounded-2xl border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 hover:border-white/20 hover:bg-white/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 flex flex-col justify-between">
+          <div className="bg-zinc-900/40 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 flex flex-col justify-between">
             <div>
-              <h3 className="text-xl font-bold text-stone-800 mb-2">
+              <h3 className="text-xl font-bold text-zinc-100 mb-2">
                 Direct Communication
               </h3>
-              <p className="text-stone-500 text-sm leading-relaxed mb-6">
+              <p className="text-zinc-500 text-sm leading-relaxed mb-6">
                 Direct contact channels for campus recruiters, hiring managers, and engineering teams.
               </p>
 
               <div className="space-y-4">
                 {/* Email with 1-click copy */}
-                <div className="p-3.5 bg-[#faf6f0] rounded-xl border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/80 flex items-center justify-between">
+                <div className="p-3.5 bg-[#0a0a0a] rounded-xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/80 flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600">
+                    <div className="w-9 h-9 rounded-lg bg-indigo-950 border border-indigo-900 flex items-center justify-center text-indigo-400">
                       <FiMail size={18} />
                     </div>
                     <div>
-                      <span className="block text-[11px] font-semibold text-stone-500 uppercase tracking-wider">Email Address</span>
-                      <a href={`mailto:${email}`} className="text-sm font-semibold text-stone-800 hover:text-blue-600 transition-colors">
+                      <span className="block text-[11px] font-semibold text-zinc-500 uppercase tracking-wider">Email Address</span>
+                      <a href={`mailto:${email}`} className="text-sm font-semibold text-zinc-100 hover:text-indigo-400 transition-colors">
                         {email}
                       </a>
                     </div>
                   </div>
                   <button
                     onClick={handleCopyEmail}
-                    className="p-2 rounded-lg text-stone-500 hover:text-blue-600 hover:bg-blue-50 transition-colors"
+                    className="p-2 rounded-lg text-zinc-500 hover:text-indigo-400 hover:bg-indigo-950 transition-colors"
                     title="Copy Email"
                     aria-label="Copy email address"
                   >
@@ -71,26 +71,26 @@ const Contact = () => {
                 </div>
 
                 {/* Phone */}
-                <div className="p-3.5 bg-[#faf6f0] rounded-xl border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/80 flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600">
+                <div className="p-3.5 bg-[#0a0a0a] rounded-xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/80 flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-lg bg-indigo-950 border border-indigo-900 flex items-center justify-center text-indigo-400">
                     <FiPhone size={18} />
                   </div>
                   <div>
-                    <span className="block text-[11px] font-semibold text-stone-500 uppercase tracking-wider">Phone</span>
-                    <a href={`tel:${phone}`} className="text-sm font-semibold text-stone-800 hover:text-blue-600 transition-colors">
+                    <span className="block text-[11px] font-semibold text-zinc-500 uppercase tracking-wider">Phone</span>
+                    <a href={`tel:${phone}`} className="text-sm font-semibold text-zinc-100 hover:text-indigo-400 transition-colors">
                       {phone}
                     </a>
                   </div>
                 </div>
 
                 {/* Location */}
-                <div className="p-3.5 bg-[#faf6f0] rounded-xl border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/80 flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600">
+                <div className="p-3.5 bg-[#0a0a0a] rounded-xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/80 flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-lg bg-indigo-950 border border-indigo-900 flex items-center justify-center text-indigo-400">
                     <FiMapPin size={18} />
                   </div>
                   <div>
-                    <span className="block text-[11px] font-semibold text-stone-500 uppercase tracking-wider">Location</span>
-                    <span className="text-sm font-semibold text-stone-800">
+                    <span className="block text-[11px] font-semibold text-zinc-500 uppercase tracking-wider">Location</span>
+                    <span className="text-sm font-semibold text-zinc-100">
                       Pune, Maharashtra, India
                     </span>
                   </div>
@@ -98,12 +98,12 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="mt-6 pt-5 border-t border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/70">
+            <div className="mt-6 pt-5 border-t border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/70">
               <a
                 href="./VIJAY_LAXMI_RESUME.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-2.5 px-4 rounded-xl bg-blue-600 text-stone-800 font-semibold text-sm hover:bg-blue-600 flex items-center justify-center gap-2 hover:border-white/20 hover:bg-white/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 transition-colors"
+                className="w-full py-2.5 px-4 rounded-xl bg-indigo-400 text-zinc-100 font-semibold text-sm hover:bg-indigo-400 flex items-center justify-center gap-2 hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 transition-colors"
               >
                 <FiFileText className="w-4 h-4" />
                 <span>Open Resume (PDF)</span>
@@ -112,12 +112,12 @@ const Contact = () => {
           </div>
 
           {/* Social Profiles & Profiles Card */}
-          <div className="bg-white/70 backdrop-blur-md p-8 rounded-2xl border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 hover:border-white/20 hover:bg-white/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 flex flex-col justify-between">
+          <div className="bg-zinc-900/40 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 flex flex-col justify-between">
             <div>
-              <h3 className="text-xl font-bold text-stone-800 mb-2">
+              <h3 className="text-xl font-bold text-zinc-100 mb-2">
                 Profiles & Repositories
               </h3>
-              <p className="text-stone-500 text-sm leading-relaxed mb-6">
+              <p className="text-zinc-500 text-sm leading-relaxed mb-6">
                 Inspect genuine Git commit histories, repository architectures, and professional career milestones.
               </p>
 
@@ -127,18 +127,18 @@ const Contact = () => {
                   href={linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 bg-[#faf6f0] rounded-xl border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/80 flex items-center justify-between hover:border-blue-600 hover:hover:border-white/20 hover:bg-white/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 transition-all group"
+                  className="p-4 bg-[#0a0a0a] rounded-xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/80 flex items-center justify-between hover:border-indigo-400 hover:hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 transition-all group"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-stone-800 transition-colors">
+                    <div className="w-10 h-10 rounded-lg bg-indigo-950 border border-indigo-900 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-400 group-hover:text-zinc-100 transition-colors">
                       <FiLinkedin size={20} />
                     </div>
                     <div>
-                      <span className="block font-bold text-stone-800 text-sm">LinkedIn Profile</span>
-                      <span className="text-xs text-stone-500 font-mono">linkedin.com/in/vijaylaxmi300704</span>
+                      <span className="block font-bold text-zinc-100 text-sm">LinkedIn Profile</span>
+                      <span className="text-xs text-zinc-500 font-mono">linkedin.com/in/vijaylaxmi300704</span>
                     </div>
                   </div>
-                  <span className="text-xs font-semibold text-blue-600 group-hover:underline">View ↗</span>
+                  <span className="text-xs font-semibold text-indigo-400 group-hover:underline">View ↗</span>
                 </a>
 
                 {/* GitHub */}
@@ -146,23 +146,23 @@ const Contact = () => {
                   href={github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-4 bg-[#faf6f0] rounded-xl border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/80 flex items-center justify-between hover:border-slate-400 hover:hover:border-white/20 hover:bg-white/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 transition-all group"
+                  className="p-4 bg-[#0a0a0a] rounded-xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/80 flex items-center justify-between hover:border-slate-400 hover:hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 transition-all group"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-white/70 backdrop-blur-md border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center text-stone-700 group-hover:bg-white group-hover:text-stone-800 transition-colors">
+                    <div className="w-10 h-10 rounded-lg bg-zinc-900/40 backdrop-blur-md border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center text-zinc-200 group-hover:bg-zinc-900 group-hover:text-zinc-100 transition-colors">
                       <FiGithub size={20} />
                     </div>
                     <div>
-                      <span className="block font-bold text-stone-800 text-sm">GitHub Workspace</span>
-                      <span className="text-xs text-stone-500 font-mono">github.com/Vijaylaxmi-30</span>
+                      <span className="block font-bold text-zinc-100 text-sm">GitHub Workspace</span>
+                      <span className="text-xs text-zinc-500 font-mono">github.com/Vijaylaxmi-30</span>
                     </div>
                   </div>
-                  <span className="text-xs font-semibold text-stone-700 group-hover:underline">View ↗</span>
+                  <span className="text-xs font-semibold text-zinc-200 group-hover:underline">View ↗</span>
                 </a>
               </div>
             </div>
 
-            <div className="mt-6 pt-5 border-t border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/70 text-xs text-stone-500">
+            <div className="mt-6 pt-5 border-t border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/70 text-xs text-zinc-500">
               ⚡ Open to relocation and immediate technical discussions for 2027 SDE campus hiring.
             </div>
           </div>
@@ -175,6 +175,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
 
 

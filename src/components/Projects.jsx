@@ -132,19 +132,19 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="py-20 bg-[#faf6f0] relative overflow-hidden border-t border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/60">
+    <section id="projects" className="py-20 bg-[#0a0a0a] relative overflow-hidden border-t border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200/60">
+          <span className="text-xs font-bold uppercase tracking-wider text-indigo-400 bg-indigo-950 px-3 py-1 rounded-full border border-indigo-800/60">
             Source Code Backed Engineering
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-800 mt-4 mb-4 tracking-tight">
-            Featured <span className="text-blue-600">Projects</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-zinc-100 mt-4 mb-4 tracking-tight">
+            Featured <span className="text-indigo-400">Projects</span>
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
-          <p className="text-stone-500 text-base sm:text-lg max-w-3xl mx-auto">
+          <div className="w-20 h-1 bg-indigo-400 mx-auto rounded-full mb-6"></div>
+          <p className="text-zinc-500 text-base sm:text-lg max-w-3xl mx-auto">
             Real software systems inspected from local and remote Git repositories. Click any project to inspect its architectural design and engineering implementation.
           </p>
         </div>
@@ -154,41 +154,41 @@ const Projects = () => {
           {projectsData.map((project) => (
             <div
               key={project.id}
-              className={`bg-[#faf6f0] rounded-xl border transition-all duration-200 flex flex-col justify-between overflow-hidden ${
+              className={`bg-[#0a0a0a] rounded-xl border transition-all duration-200 flex flex-col justify-between overflow-hidden ${
                 project.featured 
-                  ? 'border-stone-200/50/90 hover:border-white/20 hover:bg-white/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 hover:border-blue-600 hover:hover:border-white/20 hover:bg-white/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500' 
-                  : 'border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 hover:border-white/20 hover:bg-white/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 hover:border-blue-600 hover:hover:border-white/20 hover:bg-white/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500'
+                  ? 'border-white/5/90 hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 hover:border-indigo-400 hover:hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500' 
+                  : 'border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 hover:border-indigo-400 hover:hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500'
               }`}
             >
               <div className="p-7">
                 {/* Category & Badge Header */}
                 <div className="flex items-center justify-between gap-2 mb-3.5">
-                  <span className="text-xs font-semibold text-stone-500 uppercase tracking-wider">
+                  <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wider">
                     {project.category}
                   </span>
                   {project.badge && (
-                    <span className="inline-flex items-center gap-1 text-[11px] font-bold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200/70">
-                      <FiAward className="w-3 h-3 text-blue-600" />
+                    <span className="inline-flex items-center gap-1 text-[11px] font-bold text-indigo-400 bg-indigo-950 px-2.5 py-0.5 rounded-full border border-indigo-800/70">
+                      <FiAward className="w-3 h-3 text-indigo-400" />
                       {project.badge}
                     </span>
                   )}
                 </div>
 
                 {/* Project Title */}
-                <h3 className="text-xl sm:text-2xl font-bold text-stone-800 mb-2.5 leading-snug">
+                <h3 className="text-xl sm:text-2xl font-bold text-zinc-100 mb-2.5 leading-snug">
                   {project.title}
                 </h3>
 
                 {/* Tagline / Problem-Solution summary */}
-                <p className="text-stone-500 text-sm leading-relaxed mb-5">
+                <p className="text-zinc-500 text-sm leading-relaxed mb-5">
                   {project.tagline}
                 </p>
 
                 {/* Key Technical Features (Brief) */}
-                <div className="space-y-2 mb-6 text-xs text-stone-600">
+                <div className="space-y-2 mb-6 text-xs text-zinc-400">
                   {project.keyFeatures.slice(0, 2).map((feature, i) => (
                     <div key={i} className="flex items-start gap-2">
-                      <FiCheckCircle className="w-3.5 h-3.5 text-blue-600 flex-shrink-0 mt-0.5" />
+                      <FiCheckCircle className="w-3.5 h-3.5 text-indigo-400 flex-shrink-0 mt-0.5" />
                       <span className="line-clamp-2">{feature}</span>
                     </div>
                   ))}
@@ -199,7 +199,7 @@ const Projects = () => {
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="font-mono text-[11px] font-medium text-stone-600 bg-white/70 backdrop-blur-md/90 px-2 py-0.5 rounded border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/70"
+                      className="font-mono text-[11px] font-medium text-zinc-400 bg-zinc-900/40 backdrop-blur-md/90 px-2 py-0.5 rounded border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/70"
                     >
                       {tech}
                     </span>
@@ -208,10 +208,10 @@ const Projects = () => {
               </div>
 
               {/* Action Bar Footer */}
-              <div className="px-7 py-4 bg-white/70 backdrop-blur-md/80 border-t border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-wrap items-center justify-between gap-3">
+              <div className="px-7 py-4 bg-zinc-900/40 backdrop-blur-md/80 border-t border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-wrap items-center justify-between gap-3">
                 <button
                   onClick={() => setSelectedProject(project)}
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 hover:text-blue-600 transition-colors"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-400 hover:text-indigo-400 transition-colors"
                 >
                   <FiLayers className="w-3.5 h-3.5" />
                   View Architecture & Details
@@ -223,7 +223,7 @@ const Projects = () => {
                       href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-blue-600 text-stone-800 text-xs font-semibold hover:bg-blue-600 hover:border-white/20 hover:bg-white/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 transition-colors"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-indigo-400 text-zinc-100 text-xs font-semibold hover:bg-indigo-400 hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 transition-colors"
                     >
                       <FiExternalLink className="w-3.5 h-3.5" />
                       <span>Live Demo</span>
@@ -234,7 +234,7 @@ const Projects = () => {
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded border border-stone-200/50 bg-[#faf6f0] text-stone-600 text-xs font-semibold hover:border-slate-400 hover:text-stone-800 transition-colors"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded border border-white/5 bg-[#0a0a0a] text-zinc-400 text-xs font-semibold hover:border-slate-400 hover:text-zinc-100 transition-colors"
                   >
                     <FiGithub className="w-3.5 h-3.5" />
                     <span>View Repository</span>
@@ -250,26 +250,26 @@ const Projects = () => {
       {/* Interactive Project Detail Modal */}
       {selectedProject && (
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-white/60 backdrop-blur-xs animate-fadeIn"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-zinc-900/60 backdrop-blur-xs animate-fadeIn"
           onClick={() => setSelectedProject(null)}
         >
           <div 
-            className="bg-[#faf6f0] rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative"
+            className="bg-[#0a0a0a] rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Header */}
-            <div className="flex items-start justify-between gap-4 pb-4 border-b border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div className="flex items-start justify-between gap-4 pb-4 border-b border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
               <div>
-                <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">
+                <span className="text-xs font-semibold text-indigo-400 uppercase tracking-wider">
                   {selectedProject.category}
                 </span>
-                <h3 className="text-2xl sm:text-3xl font-bold text-stone-800 mt-1">
+                <h3 className="text-2xl sm:text-3xl font-bold text-zinc-100 mt-1">
                   {selectedProject.title}
                 </h3>
               </div>
               <button
                 onClick={() => setSelectedProject(null)}
-                className="p-2 rounded-lg text-stone-500 hover:text-stone-600 hover:bg-white/70 backdrop-blur-md transition-colors"
+                className="p-2 rounded-lg text-zinc-500 hover:text-zinc-400 hover:bg-zinc-900/40 backdrop-blur-md transition-colors"
                 aria-label="Close modal"
               >
                 <FiX size={22} />
@@ -277,13 +277,13 @@ const Projects = () => {
             </div>
 
             {/* Links Bar */}
-            <div className="flex flex-wrap items-center gap-3 py-4 border-b border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div className="flex flex-wrap items-center gap-3 py-4 border-b border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
               {selectedProject.liveLink && (
                 <a
                   href={selectedProject.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-600 text-stone-800 text-xs font-semibold hover:bg-blue-600 transition-colors"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-400 text-zinc-100 text-xs font-semibold hover:bg-indigo-400 transition-colors"
                 >
                   <FiExternalLink className="w-4 h-4" />
                   <span>Launch Live Deployment</span>
@@ -293,7 +293,7 @@ const Projects = () => {
                 href={selectedProject.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-stone-200/50 bg-[#faf6f0] text-stone-600 text-xs font-semibold hover:border-slate-400 hover:text-stone-800 transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-white/5 bg-[#0a0a0a] text-zinc-400 text-xs font-semibold hover:border-slate-400 hover:text-zinc-100 transition-colors"
               >
                 <FiGithub className="w-4 h-4" />
                 <span>Inspect GitHub Source Code</span>
@@ -301,52 +301,52 @@ const Projects = () => {
             </div>
 
             {/* Modal Body: Architecture & Deep Dive */}
-            <div className="py-6 space-y-6 text-sm text-stone-600">
+            <div className="py-6 space-y-6 text-sm text-zinc-400">
               
               {/* Problem & Solution */}
               <div>
-                <h4 className="font-bold text-stone-800 text-base mb-1.5 flex items-center gap-2">
-                  <FiActivity className="w-4 h-4 text-blue-600" />
+                <h4 className="font-bold text-zinc-100 text-base mb-1.5 flex items-center gap-2">
+                  <FiActivity className="w-4 h-4 text-indigo-400" />
                   Engineering Challenge & Problem Statement
                 </h4>
-                <p className="text-stone-500 leading-relaxed">
+                <p className="text-zinc-500 leading-relaxed">
                   {selectedProject.problem}
                 </p>
               </div>
 
               <div>
-                <h4 className="font-bold text-stone-800 text-base mb-1.5 flex items-center gap-2">
-                  <FiCpu className="w-4 h-4 text-blue-600" />
+                <h4 className="font-bold text-zinc-100 text-base mb-1.5 flex items-center gap-2">
+                  <FiCpu className="w-4 h-4 text-indigo-400" />
                   Technical Solution & Architecture
                 </h4>
-                <p className="text-stone-500 leading-relaxed mb-2">
+                <p className="text-zinc-500 leading-relaxed mb-2">
                   {selectedProject.solution}
                 </p>
-                <div className="p-3.5 bg-white/70 backdrop-blur-md rounded-lg border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/80 font-mono text-xs text-stone-700">
+                <div className="p-3.5 bg-zinc-900/40 backdrop-blur-md rounded-lg border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/80 font-mono text-xs text-zinc-200">
                   {selectedProject.architecture}
                 </div>
               </div>
 
               {/* Implementation Highlight */}
-              <div className="p-4 rounded-xl bg-blue-50/70 border border-blue-200/70">
-                <span className="text-xs font-bold text-blue-600 uppercase tracking-wider block mb-1">
+              <div className="p-4 rounded-xl bg-indigo-950/70 border border-indigo-800/70">
+                <span className="text-xs font-bold text-indigo-400 uppercase tracking-wider block mb-1">
                   Key Technical Implementation
                 </span>
-                <p className="text-blue-700 text-xs leading-relaxed">
+                <p className="text-indigo-300 text-xs leading-relaxed">
                   {selectedProject.technicalHighlights}
                 </p>
               </div>
 
               {/* Full Feature Set */}
               <div>
-                <h4 className="font-bold text-stone-800 text-base mb-3 flex items-center gap-2">
-                  <FiCode className="w-4 h-4 text-blue-600" />
+                <h4 className="font-bold text-zinc-100 text-base mb-3 flex items-center gap-2">
+                  <FiCode className="w-4 h-4 text-indigo-400" />
                   Major Engineering Features
                 </h4>
                 <ul className="space-y-2.5">
                   {selectedProject.keyFeatures.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-2.5 text-xs text-stone-500 leading-relaxed">
-                      <FiCheckCircle className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <li key={i} className="flex items-start gap-2.5 text-xs text-zinc-500 leading-relaxed">
+                      <FiCheckCircle className="w-4 h-4 text-indigo-400 flex-shrink-0 mt-0.5" />
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -355,14 +355,14 @@ const Projects = () => {
 
               {/* Technologies Used */}
               <div>
-                <h4 className="font-bold text-stone-800 text-xs uppercase tracking-wider mb-2.5 text-stone-500">
+                <h4 className="font-bold text-zinc-100 text-xs uppercase tracking-wider mb-2.5 text-zinc-500">
                   Complete Technology Stack
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {selectedProject.tech.map((t) => (
                     <span
                       key={t}
-                      className="font-mono text-xs font-medium text-stone-600 bg-white/70 backdrop-blur-md px-2.5 py-1 rounded border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                      className="font-mono text-xs font-medium text-zinc-400 bg-zinc-900/40 backdrop-blur-md px-2.5 py-1 rounded border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
                     >
                       {t}
                     </span>
@@ -373,10 +373,10 @@ const Projects = () => {
             </div>
 
             {/* Modal Footer */}
-            <div className="pt-4 border-t border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex justify-end">
+            <div className="pt-4 border-t border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex justify-end">
               <button
                 onClick={() => setSelectedProject(null)}
-                className="px-5 py-2 rounded-lg bg-white/70 backdrop-blur-md text-stone-600 font-semibold text-xs hover:bg-[#f5efe6] transition-colors"
+                className="px-5 py-2 rounded-lg bg-zinc-900/40 backdrop-blur-md text-zinc-400 font-semibold text-xs hover:bg-zinc-900/20 transition-colors"
               >
                 Close
               </button>
@@ -389,6 +389,7 @@ const Projects = () => {
 };
 
 export default Projects;
+
 
 
 

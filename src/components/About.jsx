@@ -4,25 +4,25 @@ const engineeringPillars = [
   {
     title: "Backend & System Protocols",
     description: "Architecting reliable REST APIs and JSON-RPC services with Model Context Protocol (MCP) standards, schema validation, and stateless authentication.",
-    icon: <FiServer className="w-6 h-6 text-blue-600" />,
+    icon: <FiServer className="w-6 h-6 text-indigo-400" />,
     tag: "Node.js • Express • MCP • REST"
   },
   {
     title: "Full-Stack Web Development",
     description: "Developing scalable web applications with React 18, TypeScript, and modern component systems, backed by optimized MongoDB and Firestore schemas.",
-    icon: <FiLayers className="w-6 h-6 text-blue-600" />,
+    icon: <FiLayers className="w-6 h-6 text-indigo-400" />,
     tag: "TypeScript • React • MongoDB • Tailwind"
   },
   {
     title: "Algorithmic Foundations & C++",
     description: "Solid theoretical and practical grasp of Data Structures, Algorithms, Object-Oriented Design, Operating Systems, and Database Management Systems.",
-    icon: <FiCode className="w-6 h-6 text-blue-600" />,
+    icon: <FiCode className="w-6 h-6 text-indigo-400" />,
     tag: "C++ • Java • DSA • DBMS • OS"
   },
   {
     title: "Applied AI & RAG Tooling",
     description: "Designing Retrieval-Augmented Generation (RAG) pipelines with LangChain and ChromaDB, alongside multimodal vision processing via Google Gemini.",
-    icon: <FiCpu className="w-6 h-6 text-blue-600" />,
+    icon: <FiCpu className="w-6 h-6 text-indigo-400" />,
     tag: "LangChain • ChromaDB • Gemini AI • Python"
   }
 ];
@@ -37,13 +37,13 @@ const highlights = [
   {
     title: "Academic Excellence",
     description: "Maintaining a cumulative 8.96/10.0 GPA across rigorous Computer Engineering coursework at PICT.",
-    icon: <FiBookOpen className="w-6 h-6 text-blue-600" />,
+    icon: <FiBookOpen className="w-6 h-6 text-indigo-400" />,
     badge: "8.96 / 10.0 GPA"
   },
   {
     title: "PMSSS Scholarship Recipient",
     description: "Recipient of the Prime Minister's Special Scholarship Scheme for meritorious higher education.",
-    icon: <FiStar className="w-6 h-6 text-blue-600" />,
+    icon: <FiStar className="w-6 h-6 text-indigo-400" />,
     badge: "Govt. of India"
   },
   {
@@ -56,20 +56,20 @@ const highlights = [
 
 const About = () => {
   return (
-    <section className="py-20 bg-white/70 backdrop-blur-md relative overflow-hidden border-t border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/60">
+    <section className="py-20 bg-zinc-900/40 backdrop-blur-md relative overflow-hidden border-t border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/60">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200/60">
+          <span className="text-xs font-bold uppercase tracking-wider text-indigo-400 bg-indigo-950 px-3 py-1 rounded-full border border-indigo-800/60">
             Background & Engineering Focus
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-800 mt-4 mb-4 tracking-tight">
-            About <span className="text-blue-600">Me</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-zinc-100 mt-4 mb-4 tracking-tight">
+            About <span className="text-indigo-400">Me</span>
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
+          <div className="w-20 h-1 bg-indigo-400 mx-auto rounded-full mb-6"></div>
           
-          <div className="max-w-3xl mx-auto space-y-4 text-stone-500 text-base sm:text-lg leading-relaxed">
+          <div className="max-w-3xl mx-auto space-y-4 text-zinc-500 text-base sm:text-lg leading-relaxed">
             <p>
               I am a final-year <strong>Computer Engineering</strong> student at <strong>Pune Institute of Computer Technology (PICT)</strong> preparing for software engineering roles. My focus centers on building reliable software systems: from robust backend services and protocol handlers to responsive, production-ready web applications.
             </p>
@@ -81,26 +81,26 @@ const About = () => {
 
         {/* Engineering Competency Grid */}
         <div className="mb-20">
-          <h3 className="text-2xl font-bold text-stone-800 text-center mb-10 tracking-tight">
-            Core Engineering <span className="text-blue-600">Competencies</span>
+          <h3 className="text-2xl font-bold text-zinc-100 text-center mb-10 tracking-tight">
+            Core Engineering <span className="text-indigo-400">Competencies</span>
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {engineeringPillars.map((pillar) => (
               <div
                 key={pillar.title}
-                className="p-6 sm:p-7 bg-[#faf6f0] rounded-xl border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/90 hover:border-blue-600 hover:hover:border-white/20 hover:bg-white/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 transition-all duration-200"
+                className="p-6 sm:p-7 bg-[#0a0a0a] rounded-xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/90 hover:border-indigo-400 hover:hover:border-white/20 hover:bg-zinc-900/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 transition-all duration-200"
               >
-                <div className="w-12 h-12 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-lg bg-indigo-950 border border-indigo-900 flex items-center justify-center mb-4">
                   {pillar.icon}
                 </div>
-                <h4 className="text-lg font-bold text-stone-800 mb-2">
+                <h4 className="text-lg font-bold text-zinc-100 mb-2">
                   {pillar.title}
                 </h4>
-                <p className="text-stone-500 text-sm leading-relaxed mb-4">
+                <p className="text-zinc-500 text-sm leading-relaxed mb-4">
                   {pillar.description}
                 </p>
-                <div className="pt-3 border-t border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                  <span className="font-mono text-xs font-medium text-blue-600 bg-blue-50/80 px-2.5 py-1 rounded border border-blue-100">
+                <div className="pt-3 border-t border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                  <span className="font-mono text-xs font-medium text-indigo-400 bg-indigo-950/80 px-2.5 py-1 rounded border border-indigo-900">
                     {pillar.tag}
                   </span>
                 </div>
@@ -111,28 +111,28 @@ const About = () => {
 
         {/* Verified Honors & Highlights */}
         <div>
-          <h3 className="text-2xl font-bold text-stone-800 text-center mb-10 tracking-tight">
-            Key <span className="text-blue-600">Highlights</span> & Recognition
+          <h3 className="text-2xl font-bold text-zinc-100 text-center mb-10 tracking-tight">
+            Key <span className="text-indigo-400">Highlights</span> & Recognition
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
             {highlights.map((item) => (
               <div
                 key={item.title}
-                className="p-5 bg-[#faf6f0] rounded-xl border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/90 hover:border-blue-600 transition-all duration-200 flex flex-col justify-between"
+                className="p-5 bg-[#0a0a0a] rounded-xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/90 hover:border-indigo-400 transition-all duration-200 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-3">
-                    <div className="p-2 rounded-lg bg-white/70 backdrop-blur-md border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div className="p-2 rounded-lg bg-zinc-900/40 backdrop-blur-md border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                       {item.icon}
                     </div>
-                    <span className="text-[11px] font-semibold text-stone-500 uppercase tracking-wider bg-white/70 backdrop-blur-md px-2 py-0.5 rounded">
+                    <span className="text-[11px] font-semibold text-zinc-500 uppercase tracking-wider bg-zinc-900/40 backdrop-blur-md px-2 py-0.5 rounded">
                       {item.badge}
                     </span>
                   </div>
-                  <h4 className="text-base font-bold text-stone-800 mb-1.5">
+                  <h4 className="text-base font-bold text-zinc-100 mb-1.5">
                     {item.title}
                   </h4>
-                  <p className="text-stone-500 text-xs leading-relaxed">
+                  <p className="text-zinc-500 text-xs leading-relaxed">
                     {item.description}
                   </p>
                 </div>
@@ -147,6 +147,7 @@ const About = () => {
 };
 
 export default About;
+
 
 
 
