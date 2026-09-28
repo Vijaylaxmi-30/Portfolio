@@ -1,138 +1,155 @@
-import React from 'react';
+import { FiServer, FiLayers, FiCode, FiCpu, FiAward, FiBookOpen, FiStar, FiUsers } from 'react-icons/fi';
 
-
-
-const qualities = [
+const engineeringPillars = [
   {
-    title: "Quick Learner",
-    description: "Rapidly adapts to new technologies and frameworks, constantly expanding knowledge base",
-    icon: "🚀",
-    gradient: "from-teal-600 to-emerald-500"
+    title: "Backend & System Protocols",
+    description: "Architecting reliable REST APIs and JSON-RPC services with Model Context Protocol (MCP) standards, schema validation, and stateless authentication.",
+    icon: <FiServer className="w-6 h-6 text-blue-600" />,
+    tag: "Node.js • Express • MCP • REST"
   },
   {
-    title: "Collaborative Team Player",
-    description: "Thrives in team environments, contributing effectively to group projects and initiatives",
-    icon: "🤝",
-    gradient: "from-teal-500 to-cyan-500"
+    title: "Full-Stack Web Development",
+    description: "Developing scalable web applications with React 18, TypeScript, and modern component systems, backed by optimized MongoDB and Firestore schemas.",
+    icon: <FiLayers className="w-6 h-6 text-blue-600" />,
+    tag: "TypeScript • React • MongoDB • Tailwind"
   },
   {
-    title: "Creative Thinker",
-    description: "Approaches problems with innovative solutions and out-of-the-box thinking",
-    icon: "💡",
-    gradient: "from-emerald-500 to-teal-500"
+    title: "Algorithmic Foundations & C++",
+    description: "Solid theoretical and practical grasp of Data Structures, Algorithms, Object-Oriented Design, Operating Systems, and Database Management Systems.",
+    icon: <FiCode className="w-6 h-6 text-blue-600" />,
+    tag: "C++ • Java • DSA • DBMS • OS"
   },
   {
-    title: "User-Centric Focus",
-    description: "Prioritizes user experience and creates solutions that truly serve end-users",
-    icon: "👥",
-    gradient: "from-cyan-500 to-teal-500"
+    title: "Applied AI & RAG Tooling",
+    description: "Designing Retrieval-Augmented Generation (RAG) pipelines with LangChain and ChromaDB, alongside multimodal vision processing via Google Gemini.",
+    icon: <FiCpu className="w-6 h-6 text-blue-600" />,
+    tag: "LangChain • ChromaDB • Gemini AI • Python"
   }
 ];
 
-const achievements = [
+const highlights = [
   {
-    title: "Second Runner-Up",
-    description: "Hackathon organized by Sinhgad College of Engineering",
-    icon: "🏆",
-    gradient: "from-teal-600 to-emerald-500"
+    title: "Hackathon Runner-Up",
+    description: "Awarded 2nd place at Sinhgad College Hackathon for architecting VitalSync, a full-stack health platform.",
+    icon: <FiAward className="w-6 h-6 text-emerald-600" />,
+    badge: "Sinhgad College"
   },
   {
     title: "Academic Excellence",
-    description: "Maintaining 8.8/10 GPA in Computer Engineering",
-    icon: "🎓",
-    gradient: "from-teal-500 to-cyan-500"
+    description: "Maintaining a cumulative 8.96/10.0 GPA across rigorous Computer Engineering coursework at PICT.",
+    icon: <FiBookOpen className="w-6 h-6 text-blue-600" />,
+    badge: "8.96 / 10.0 GPA"
   },
   {
-    title: "Leadership Role",
-    description: "Fandom and Electroquest Lead for Pulzion' 24",
-    icon: "👑",
-    gradient: "from-emerald-500 to-teal-500"
+    title: "PMSSS Scholarship Recipient",
+    description: "Recipient of the Prime Minister's Special Scholarship Scheme for meritorious higher education.",
+    icon: <FiStar className="w-6 h-6 text-blue-600" />,
+    badge: "Govt. of India"
   },
   {
-    title: "Community Service",
-    description: "Active volunteer in NSS and multiple college initiatives",
-    icon: "🌟",
-    gradient: "from-cyan-500 to-teal-500"
+    title: "Campus & Tech Leadership",
+    description: "Technical Team Member at CSI (Computer Society of India) PICT and Event Lead for Pulzion'24.",
+    icon: <FiUsers className="w-6 h-6 text-cyan-600" />,
+    badge: "CSI & Pulzion"
   }
 ];
 
-const About = () => (
-  <section className="py-20 bg-slate-50 relative overflow-hidden">
-
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      {/* Section Header */}
-      <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-          About <span className="text-teal-700">Me</span>
-        </h2>
-        <div className="w-24 h-1 bg-teal-600 mx-auto rounded-full mb-8"></div>
-        {/* Summary */}
-        <div className="max-w-4xl mx-auto">
-          <p className="text-xl text-slate-600 leading-relaxed mb-8">
-            I'm a passionate Computer Engineering student with a deep love for creating 
-            <span className="text-teal-700 font-semibold"> real-world solutions</span> that make a difference. 
-            My journey in tech is driven by curiosity and the desire to build applications that solve actual problems.
-          </p>
-          <p className="text-lg text-slate-600 leading-relaxed">
-            Whether it's developing full-stack applications, exploring machine learning algorithms, or collaborating 
-            on innovative projects, I bring <span className="text-teal-700 font-semibold">dedication</span>, 
-            <span className="text-teal-700 font-semibold"> creativity</span>, and a 
-            <span className="text-teal-700 font-semibold"> growth mindset</span> to everything I do.
-          </p>
+const About = () => {
+  return (
+    <section className="py-20 bg-white/70 backdrop-blur-md relative overflow-hidden border-t border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/60">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200/60">
+            Background & Engineering Focus
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-800 mt-4 mb-4 tracking-tight">
+            About <span className="text-blue-600">Me</span>
+          </h2>
+          <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
+          
+          <div className="max-w-3xl mx-auto space-y-4 text-stone-500 text-base sm:text-lg leading-relaxed">
+            <p>
+              I am a final-year <strong>Computer Engineering</strong> student at <strong>Pune Institute of Computer Technology (PICT)</strong> preparing for software engineering roles. My focus centers on building reliable software systems: from robust backend services and protocol handlers to responsive, production-ready web applications.
+            </p>
+            <p>
+              Having worked on enterprise API and Model Context Protocol (MCP) validation during my internship at <strong>Cequence Security</strong>, as well as hands-on predictive modeling at <strong>NITTTR Bhopal</strong>, I combine deep theoretical CS foundations (DSA, OOP, DBMS, OS) with clean code practices.
+            </p>
+          </div>
         </div>
-      </div>
 
-      {/* Qualities Section */}
-      <div className="mb-20">
-        <h3 className="text-3xl font-bold text-slate-900 text-center mb-12">
-          My <span className="text-teal-700">Qualities</span>
-        </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {qualities.map((quality, index) => (
-            <div
-              key={quality.title}
-              className="group p-8 bg-white rounded-2xl border border-slate-200 hover:border-teal-300 transition-colors duration-200 shadow-sm"
-            >
-              <div className={`w-16 h-16 bg-gradient-to-r ${quality.gradient} rounded-2xl flex items-center justify-center mb-6`}>
-                <span className="text-2xl">{quality.icon}</span>
+        {/* Engineering Competency Grid */}
+        <div className="mb-20">
+          <h3 className="text-2xl font-bold text-stone-800 text-center mb-10 tracking-tight">
+            Core Engineering <span className="text-blue-600">Competencies</span>
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            {engineeringPillars.map((pillar) => (
+              <div
+                key={pillar.title}
+                className="p-6 sm:p-7 bg-[#faf6f0] rounded-xl border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/90 hover:border-blue-600 hover:hover:border-white/20 hover:bg-white/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 transition-all duration-200"
+              >
+                <div className="w-12 h-12 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center mb-4">
+                  {pillar.icon}
+                </div>
+                <h4 className="text-lg font-bold text-stone-800 mb-2">
+                  {pillar.title}
+                </h4>
+                <p className="text-stone-500 text-sm leading-relaxed mb-4">
+                  {pillar.description}
+                </p>
+                <div className="pt-3 border-t border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                  <span className="font-mono text-xs font-medium text-blue-600 bg-blue-50/80 px-2.5 py-1 rounded border border-blue-100">
+                    {pillar.tag}
+                  </span>
+                </div>
               </div>
-              <h4 className="text-xl font-bold text-slate-900 mb-4 group-hover:text-teal-700 transition-colors duration-200">
-                {quality.title}
-              </h4>
-              <p className="text-slate-600 leading-relaxed group-hover:text-slate-700 transition-colors duration-200">
-                {quality.description}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* Achievements Section */}
-      <div>
-        <h3 className="text-3xl font-bold text-slate-900 text-center mb-12">
-          My <span className="text-teal-700">Achievements</span>
-        </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {achievements.map((achievement, index) => (
-            <div
-              key={achievement.title}
-              className="group p-8 bg-white rounded-2xl border border-slate-200 hover:border-teal-300 transition-colors duration-200 shadow-sm"
-            >
-              <div className={`w-16 h-16 bg-gradient-to-r ${achievement.gradient} rounded-2xl flex items-center justify-center mb-6`}>
-                <span className="text-2xl">{achievement.icon}</span>
+        {/* Verified Honors & Highlights */}
+        <div>
+          <h3 className="text-2xl font-bold text-stone-800 text-center mb-10 tracking-tight">
+            Key <span className="text-blue-600">Highlights</span> & Recognition
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
+            {highlights.map((item) => (
+              <div
+                key={item.title}
+                className="p-5 bg-[#faf6f0] rounded-xl border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/90 hover:border-blue-600 transition-all duration-200 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="p-2 rounded-lg bg-white/70 backdrop-blur-md border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                      {item.icon}
+                    </div>
+                    <span className="text-[11px] font-semibold text-stone-500 uppercase tracking-wider bg-white/70 backdrop-blur-md px-2 py-0.5 rounded">
+                      {item.badge}
+                    </span>
+                  </div>
+                  <h4 className="text-base font-bold text-stone-800 mb-1.5">
+                    {item.title}
+                  </h4>
+                  <p className="text-stone-500 text-xs leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
               </div>
-              <h4 className="text-xl font-bold text-slate-900 mb-4 group-hover:text-teal-700 transition-colors duration-200">
-                {achievement.title}
-              </h4>
-              <p className="text-slate-600 leading-relaxed group-hover:text-slate-700 transition-colors duration-200">
-                {achievement.description}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default About;
+
+
+
+
+
+

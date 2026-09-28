@@ -1,196 +1,179 @@
-import React from 'react';
+import { FiBriefcase, FiAward, FiCheckCircle } from 'react-icons/fi';
 
 const experiences = [
   {
-    title: "AI/ML Intern",
-    company: "AICTE Samarthan Program",
-    organization: "NITTTR Bhopal",
-    duration: "May 2025 – Jun 2025",
-    type: "Internship",
-    description: "Built regression and LSTM-based models for house price prediction, applying preprocessing and feature engineering on real datasets and delivering an end-to-end ML pipeline with evaluation results.",
-    skills: ["Python", "Machine Learning", "LSTM", "Feature Engineering", "Model Evaluation"],
-    icon: "🤖",
-    gradient: "from-teal-600 to-emerald-500"
-  },
-  {
     title: "API Testing Intern",
-    company: "Sequence Technologies",
-    organization: "API & MCP Testing",
+    company: "Cequence Security",
+    location: "Pune, India",
     duration: "Sep 2025 – Oct 2025",
     type: "Internship",
-    description: "Performed integrated API and MCP testing using Cursor, Postman, and Swagger; validated APIs across GCP Billing, Gmail, Zendesk, and Workday integrations and reported 15+ bugs.",
-    skills: ["Postman", "Swagger", "API Testing", "Bug Reporting", "QA"],
-    icon: "🧪",
-    gradient: "from-teal-500 to-cyan-500"
+    bullets: [
+      "Executed integrated API and Model Context Protocol (MCP) verification suites using Cursor, Postman, and Swagger across enterprise cloud services.",
+      "Validated end-to-end API workflows and connector reliability for GCP Billing, Gmail, Zendesk, and Workday enterprise integrations.",
+      "Identified, documented, and verified 15+ critical bug tickets in active collaboration with engineering teams, significantly bolstering test coverage."
+    ],
+    skills: ["Model Context Protocol (MCP)", "Postman", "Swagger", "API Validation", "GCP Billing", "Cursor"]
+  },
+  {
+    title: "AI/ML Intern",
+    company: "AICTE Samarthan Program — NITTTR Bhopal",
+    location: "Remote / Bhopal, India",
+    duration: "May 2025 – Jun 2025",
+    type: "Internship",
+    bullets: [
+      "Built multivariate regression and Long Short-Term Memory (LSTM) time-series forecasting models for price prediction on complex real-world datasets.",
+      "Engineered automated feature selection, correlation analysis, and data normalization pipelines using Pandas and NumPy.",
+      "Evaluated model convergence, loss curves, and predictive accuracy against baseline estimators using RMSE and MAE metrics."
+    ],
+    skills: ["Python", "LSTM", "Scikit-Learn", "Feature Engineering", "Data Modeling", "Pandas"]
   }
 ];
 
-const activities = [
+const leadershipRoles = [
   {
-    title: "Fandom and Electroquest Lead",
-    organization: "Pulzion' 24",
-    type: "Leadership",
-    description: "Led the Fandom and Electroquest events for PICT's annual techfest, managing team coordination and event execution.",
-    icon: "👑",
-    gradient: "from-teal-600 to-emerald-500"
+    role: "Technical Team Member",
+    organization: "Computer Society of India (CSI), PICT",
+    duration: "2024 – Present",
+    description: "Contributed to student technical workshops, hackathons, and technical event infrastructure for computer engineering students."
   },
   {
-    title: "FY Class Representative",
-    organization: "Credenz",
-    type: "Volunteer",
-    description: "Served as First Year Class Representative, facilitating communication between students and faculty.",
-    icon: "🎓",
-    gradient: "from-teal-500 to-cyan-500"
+    role: "Lead Event Coordinator (Fandom)",
+    organization: "Pulzion'24 — PICT Annual Techfest",
+    duration: "2024",
+    description: "Spearheaded planning, participant management, and technical logistics for Pulzion'24 flagship competitive events."
   },
   {
-    title: "Cultural Head — NSS 7-Day Camp",
-    organization: "NSS, PICT",
-    type: "Leadership",
-    description: "Led cultural activities for the 7-day NSS camp in 2026, coordinating events and team participation.",
-    icon: "🎭",
-    gradient: "from-emerald-500 to-teal-500"
-  },
-  {
-    title: "Publicity Head",
-    organization: "NSS, PICT",
-    type: "Leadership",
-    description: "Led publicity initiatives for NSS events and outreach programs, coordinating communications and campaign planning.",
-    icon: "📣",
-    gradient: "from-cyan-500 to-teal-500"
-  },
-  {
-    title: "Core Team Member",
-    organization: "NSS, PICT",
-    type: "Leadership",
-    description: "Contributed to planning and execution of NSS events as part of the core team.",
-    icon: "🧩",
-    gradient: "from-teal-500 to-emerald-500"
+    role: "Publicity Head & Cultural Coordinator",
+    organization: "National Service Scheme (NSS), PICT",
+    duration: "2024 – 2026",
+    description: "Directed publicity outreach campaigns and cultural programming for university community service camps and outreach initiatives."
   }
 ];
 
-const Experience = () => (
-  <section className="py-20 bg-slate-50 relative overflow-hidden">
-    {/* Background Elements */}
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      <div className="absolute top-10 right-10 w-32 h-32 bg-teal-100/50 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 left-10 w-40 h-40 bg-emerald-100/50 rounded-full blur-3xl"></div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-cyan-100/50 rounded-full blur-3xl"></div>
-    </div>
+const Experience = () => {
+  return (
+    <section id="experience" className="py-20 bg-white/70 backdrop-blur-md relative overflow-hidden border-t border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300/60">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <span className="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200/60">
+            Work History
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-stone-800 mt-4 mb-4 tracking-tight">
+            Work & <span className="text-blue-600">Experience</span>
+          </h2>
+          <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
+          <p className="text-stone-500 text-base sm:text-lg max-w-2xl mx-auto">
+            Practical engineering experience across enterprise security API testing and machine learning pipelines.
+          </p>
+        </div>
 
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      {/* Section Header */}
-      <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-          My <span className="text-teal-700">Experience</span>
-        </h2>
-        <div className="w-24 h-1 bg-teal-600 mx-auto rounded-full mb-8"></div>
-        <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-          Building expertise through hands-on experience in AI/ML, leadership roles,
-          and community engagement
-        </p>
-      </div>
-
-      {/* Professional Experience */}
-      <div className="mb-16">
-        <h3 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-          Professional <span className="text-teal-700">Experience</span>
-        </h3>
-        <div className="space-y-8">
-          {experiences.map((exp, index) => (
+        {/* Professional Experience Cards */}
+        <div className="space-y-8 mb-20 max-w-4xl mx-auto">
+          {experiences.map((exp) => (
             <div
-              key={exp.title}
-              className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 hover:border-teal-300 transition-colors duration-200 shadow-sm"
+              key={exp.title + exp.company}
+              className="bg-[#faf6f0] p-7 sm:p-8 rounded-xl border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 hover:border-blue-600 hover:hover:border-white/20 hover:bg-white/60 shadow-none hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-500 transition-all duration-200"
             >
-              {/* Timeline dot */}
-              <div className="absolute -left-4 top-8 w-8 h-8 bg-teal-600 rounded-full border-4 border-slate-50"></div>
-
-              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
-                <div className="flex items-start space-x-4 mb-4 lg:mb-0">
-                  <div
-                    className={`w-16 h-16 bg-gradient-to-r ${exp.gradient} rounded-2xl flex items-center justify-center shadow-lg`}
-                  >
-                    <span className="text-2xl">{exp.icon}</span>
-                  </div>
-                  <div>
-                    <h4 className="text-2xl font-bold text-slate-900 group-hover:text-teal-700 transition-colors duration-200">
-                      {exp.title}
-                    </h4>
-                    <p className="text-lg text-teal-700 font-semibold">
-                      {exp.company}
-                    </p>
-                    <p className="text-slate-500">{exp.organization}</p>
-                  </div>
-                </div>
-
-                <div className="flex flex-col items-start lg:items-end space-y-2">
-                  <span className="px-4 py-2 bg-teal-50 text-teal-700 rounded-full text-sm font-medium border border-teal-100">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-5 pb-4 border-b border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div>
+                  <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider bg-blue-50 text-blue-600 border border-blue-200/60 mb-2">
+                    <FiBriefcase className="w-3 h-3 text-blue-600" />
                     {exp.type}
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-stone-800">
+                    {exp.title}
+                  </h3>
+                  <p className="text-blue-600 font-semibold text-base">
+                    {exp.company}
+                  </p>
+                </div>
+                <div className="sm:text-right">
+                  <span className="inline-block font-mono text-xs font-semibold text-stone-500 bg-white/70 backdrop-blur-md px-3 py-1 rounded">
+                    {exp.duration}
                   </span>
-                  <span className="text-slate-500 text-sm">{exp.duration}</span>
+                  <span className="block text-stone-500 text-xs mt-1">
+                    {exp.location}
+                  </span>
                 </div>
               </div>
 
-              <p className="text-slate-600 leading-relaxed mb-6 group-hover:text-slate-700 transition-colors duration-200">
-                {exp.description}
-              </p>
+              {/* Action-Oriented Technical Bullets */}
+              <ul className="space-y-2.5 mb-6 text-stone-500 text-sm leading-relaxed">
+                {exp.bullets.map((bullet, idx) => (
+                  <li key={idx} className="flex items-start gap-2.5">
+                    <FiCheckCircle className="w-4 h-4 text-blue-600 flex-shrink-0 mt-1" />
+                    <span>{bullet}</span>
+                  </li>
+                ))}
+              </ul>
 
-              {exp.skills && (
-                <div className="flex flex-wrap gap-2">
-                  {exp.skills.map((skill, skillIndex) => (
-                    <span
-                      key={skill}
-                      className="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-sm hover:bg-teal-600 hover:text-white transition-colors duration-200"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              )}
+              {/* Skills badges */}
+              <div className="flex flex-wrap gap-2 pt-2 border-t border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                {exp.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="font-mono text-xs font-medium text-stone-600 bg-white/70 backdrop-blur-md px-2.5 py-1 rounded border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
           ))}
         </div>
-      </div>
 
-      {/* Leadership & Activities */}
-      <div>
-        <h3 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-          Leadership & <span className="text-teal-700">Activities</span>
-        </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {activities.map((activity, index) => (
-            <div
-              key={activity.title}
-              className="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 hover:border-teal-300 transition-colors duration-200 shadow-sm"
-            >
+        {/* Leadership & Campus Roles */}
+        <div>
+          <div className="text-center mb-10">
+            <h3 className="text-2xl font-bold text-stone-800 tracking-tight">
+              Technical & Campus <span className="text-blue-600">Leadership</span>
+            </h3>
+            <p className="text-stone-500 text-sm mt-1">
+              Active involvement in departmental societies, annual techfests, and student communities.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {leadershipRoles.map((role) => (
               <div
-                className={`w-14 h-14 bg-gradient-to-r ${activity.gradient} rounded-2xl flex items-center justify-center mb-4 shadow-lg`}
+                key={role.role}
+                className="bg-[#faf6f0] p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 hover:border-blue-600 transition-all duration-200 flex flex-col justify-between"
               >
-                <span className="text-xl">{activity.icon}</span>
+                <div>
+                  <div className="w-10 h-10 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center mb-4">
+                    <FiAward className="w-5 h-5 text-blue-600" />
+                  </div>
+                  <h4 className="font-bold text-stone-800 text-base mb-1">
+                    {role.role}
+                  </h4>
+                  <p className="text-blue-600 text-xs font-semibold mb-3">
+                    {role.organization}
+                  </p>
+                  <p className="text-stone-500 text-xs leading-relaxed mb-4">
+                    {role.description}
+                  </p>
+                </div>
+                <div className="pt-3 border-t border-stone-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                  <span className="font-mono text-[11px] text-stone-500 font-medium">
+                    {role.duration}
+                  </span>
+                </div>
               </div>
-
-              <div className="mb-3">
-                <span className="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-xs font-medium border border-teal-100">
-                  {activity.type}
-                </span>
-              </div>
-
-              <h4 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-teal-700 transition-colors duration-200">
-                {activity.title}
-              </h4>
-
-              <p className="text-teal-700 font-medium text-sm mb-3">
-                {activity.organization}
-              </p>
-
-              <p className="text-slate-600 text-sm leading-relaxed group-hover:text-slate-700 transition-colors duration-200">
-                {activity.description}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default Experience;
+
+
+
+
+
+
