@@ -1,5 +1,5 @@
 import { FiFileText, FiArrowRight, FiLinkedin, FiGithub, FiMail } from 'react-icons/fi';
-import profileImage from '../assets/vijaylaxmi.jpeg';
+import profileImage from '../assets/vijaylaxmi_new.jpg';
 
 const Hero = () => {
   const technicalPills = [

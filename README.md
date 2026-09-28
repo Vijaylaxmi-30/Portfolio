@@ -29,7 +29,7 @@ Modern, responsive software engineering portfolio built with **React 19, Vite, a
 Portfolio/
 ├── public/
 │   ├── VIJAY_LAXMI_RESUME.pdf   # Verified technical resume
-│   └── vijaylaxmi.jpeg          # Profile headshot
+│   └── vijaylaxmi_new.jpg          # Profile headshot
 ├── src/
 │   ├── assets/                  # Local media assets
 │   ├── components/
